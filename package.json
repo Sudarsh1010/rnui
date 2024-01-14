@@ -1,5 +1,5 @@
 {
-  "name": "rnui",
+  "name": "rnui-workspace",
   "private": true,
   "scripts": {
     "build": "turbo build",
