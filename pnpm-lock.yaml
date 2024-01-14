@@ -29,6 +29,9 @@ importers:
       react-native:
         specifier: 0.73.2
         version: 0.73.2(@babel/core@7.23.3)(@babel/preset-env@7.23.8)(react@18.2.0)
+      react-native-unistyles:
+        specifier: ^2.0.1
+        version: 2.0.1(@react-native/normalize-colors@0.73.2)(react-native@0.73.2)(react@18.2.0)
       rnui:
         specifier: workspace:*
         version: link:../../packages/rnui
@@ -117,6 +120,9 @@ importers:
       react-native:
         specifier: '*'
         version: 0.73.2(@babel/core@7.23.3)(@babel/preset-env@7.23.8)(react@18.2.0)
+      react-native-unistyles:
+        specifier: '*'
+        version: 2.0.1(@react-native/normalize-colors@0.73.2)(react-native@0.73.2)(react@18.2.0)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -6340,6 +6346,26 @@ packages:
 
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+
+  /react-native-unistyles@2.0.1(@react-native/normalize-colors@0.73.2)(react-native@0.73.2)(react@18.2.0):
+    resolution: {integrity: sha512-GEuDyTfcnlYmbheqgDCTupmLUHoTkK3tV5WabJpZPVPzmYT8ZJjiQxLnbLxiLvUpnER8HdFWKIu5WBgTY2B1sg==}
+    engines: {node: '>= 18.0.0'}
+    peerDependencies:
+      '@react-native/normalize-colors': '*'
+      react: '*'
+      react-native: '*'
+      react-native-macos: '*'
+      react-native-web: '*'
+    peerDependenciesMeta:
+      react-native-macos:
+        optional: true
+      react-native-web:
+        optional: true
+    dependencies:
+      '@react-native/normalize-colors': 0.73.2
+      react: 18.2.0
+      react-native: 0.73.2(@babel/core@7.23.3)(@babel/preset-env@7.23.8)(react@18.2.0)
+    dev: false
 
   /react-native@0.73.2(@babel/core@7.23.3)(@babel/preset-env@7.23.8)(react@18.2.0):
     resolution: {integrity: sha512-7zj9tcUYpJUBdOdXY6cM8RcXYWkyql4kMyGZflW99E5EuFPoC7Ti+ZQSl7LP9ZPzGD0vMfslwyDW0I4tPWUCFw==}

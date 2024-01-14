@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./button": "./src/ui/button.tsx"
   },
+  "types": "./src",
   "scripts": {
     "lint": "eslint . --max-warnings 0"
   },
@@ -22,6 +21,7 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-unistyles": "*"
   }
 }
